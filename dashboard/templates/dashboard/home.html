@@ -1,0 +1,70 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Tech Tetrad</h3>
+  <h1>Welcome's you</h1>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'trans'%}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/translate.jpg' %}" alt="Translator image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Translator
+            </h5>
+            Here you can translate anyword into any language
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'wiki'%}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wikipedia.jpg' %}" alt="wikipedia image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Wikipedia
+            </h5>
+            Facing problem for finding information due to lot of results on web here try me please!!!
+          </div>
+        </div>
+      </a>
+    </div>
+    
+
+    <div class="col-md-3">
+      <a href="{% url 'dictionary' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/dictionary.jpeg' %}" alt="dictionary image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Dictionary
+            </h5>
+            Some words are like out of imagination wanna find out their meaning you can use me
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col-md-3">
+      <a href="{% url 'conversion' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/conversion.jpg' %}" alt="conversion image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Convertor
+            </h5>
+            Having hard time doing conversions here let me make your work easier try me
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+{% endblock content %}
