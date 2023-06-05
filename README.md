@@ -1,2 +1,2 @@
 # django-project
-# this is a portal website 
+# this is a students portal website 
